@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
                     px-5 py-5
                     ">
                     <Header />
+                    <Outlet />
                 </section>
             </div>
         </main>
