@@ -6,10 +6,6 @@ export default function Jupiter() {
             name=""
             descrition=""
             href=""
-            rotationT=""
-            revolutionTT=""
-            radius=""
-            temp=""
         />
     )
 }

@@ -6,10 +6,6 @@ export default function Saturn() {
             name=""
             descrition=""
             href=""
-            rotationT=""
-            revolutionTT=""
-            radius=""
-            temp=""
         />
     )
 }

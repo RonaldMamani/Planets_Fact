@@ -13,9 +13,9 @@ export default function NavBarMobile() {
             <button onClick={() => setOpen(!open)}>
                 {open ? 
                     (
-                        <img src={Hamburger} alt="" />
+                        <img className="" src={Close} alt="" />
                     ) : (
-                        <img className="fill-slate-500" src={Close} alt="" />
+                        <img className="" src={Hamburger} alt="" />
                     )
                 }
             </button>

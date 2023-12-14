@@ -6,10 +6,6 @@ export default function Venus() {
             name=""
             descrition=""
             href=""
-            rotationT=""
-            revolutionTT=""
-            radius=""
-            temp=""
         />
     )
 }

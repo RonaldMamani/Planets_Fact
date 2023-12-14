@@ -6,10 +6,6 @@ export default function Neptune() {
             name=""
             descrition=""
             href=""
-            rotationT=""
-            revolutionTT=""
-            radius=""
-            temp=""
         />
     )
 }
