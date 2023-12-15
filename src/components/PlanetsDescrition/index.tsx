@@ -1,5 +1,4 @@
 import Source from "../../assets/icon-source.svg" 
-import DetailPlanet from "../DetailPlanet"
 
 type Props = {
     name: string,
@@ -14,7 +13,7 @@ export default function PlanetsDescrition({ name,descrition,href } : Props) {
             <p className="text-gray-400 pb-3">{descrition}</p>
             <span className="flex justify-center gap-2 items-center font-bold text-sm">
                 <span className="text-gray-600">Source</span>
-                <a href={href} className="flex items-center gap-1">
+                <a target="_blank" href={href} className="flex items-center gap-1">
                     <span className="text-gray-400">wikipedia</span>
                     <img src={Source} alt="Icone de Source" />
                 </a>

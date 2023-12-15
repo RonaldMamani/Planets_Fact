@@ -34,7 +34,10 @@ export default function Mercury() {
 
     return(
         <>
-            <nav className="flex justify-between border-y border-gray-400 mt-8">
+            <nav className="
+                flex justify-between border-y border-gray-500 mt-8
+                px-5
+                ">
                 <ButtonStatePlanet 
                     content="Overview" 
                     className={`${overview ? 'text-white border-b-4 border-[#419EBB]' : 'text-gray-500'}`}
@@ -51,8 +54,11 @@ export default function Mercury() {
                     onClick={handleButtonSurface}
                 />
             </nav>
-            <section className="grid grid-rows-3 gap-5 items-center">
-                <div className="flex justify-center relative">
+            <section className="
+                grid grid-rows-3 gap-5 items-center
+                px-5 py-5
+                ">
+                <div className="flex justify-center relative z-0">
                     {overview &&
                         <img className="w-[30%] h-[30%]" src={Planet} alt="" />
                     }
@@ -68,9 +74,13 @@ export default function Mercury() {
                 </div>
                 <PlanetsDescrition 
                     name="Mecury"
-                    descrition="Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 
-                    87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, 
-                    and is a rocky body like Earth."
+                    descrition={`
+                        ${overview && `Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 
+                        87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, 
+                        and is a rocky body like Earth.`}
+                        ${structure && `structure`}
+                        ${surface && `surface`}
+                        `}
                     href="https://pt.wikipedia.org/wiki/Merc%C3%BArio_(planeta)"
                 />
                 <PlanetStatistics 
