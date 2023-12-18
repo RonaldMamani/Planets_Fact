@@ -12,6 +12,7 @@ export default function PlanetStatistics({ rotation,revolution,radius,temp } : P
         <div className="
             flex flex-col gap-5
             md:flex-row md:justify-between md:gap-3
+            lg:gap-10
             ">
             <DetailPlanet titleDetail="Rotattion Time" detail={rotation} />
             <DetailPlanet titleDetail="Revolution Time" detail={revolution} />

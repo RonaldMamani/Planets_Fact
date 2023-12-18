@@ -32,10 +32,11 @@ export default function Header() {
                 flex justify-between items-center
                 px-5 max-[767px]:pt-5
                 md:px-10 md:flex-col md:gap-5
-                lg:flex-row lg:justify-between
+                lg:px-16 lg:flex-row lg:justify-between
                 ">
                     <Link to={'/'} className="
-                        uppercase text-3xl text-white font-bold
+                        uppercase text-3xl text-white font-bold pt-0
+                        md:pt-10 lg:pt-0
                         ">The Planets
                     </Link>
                     <nav className="">

@@ -9,9 +9,9 @@ export default function ButtonStatePlanet({ content,number,className,onClick } :
     return (
         <button 
             className={`${className} 
-                uppercase font-semibold py-5
-                md:border-gray-500 md:border md:p-3 md:text-start md:flex md:gap-4 md:w-[300px]
-                md:
+                uppercase font-semibold py-5 transition-colors
+                md:border-gray-500 md:border md:p-3 md:text-start md:flex md:gap-4 md:w-[290px]
+                lg:w-[405px] lg:px-7 lg:gap-6 lg:text-lg 
                 `}
             onClick={onClick}
             >
