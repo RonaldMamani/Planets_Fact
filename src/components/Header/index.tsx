@@ -15,6 +15,7 @@ export default function Header() {
             <div className="
                 flex justify-between items-center
                 px-5 pt-5
+                md:flex-col
                 ">
                     <span className="uppercase text-3xl text-white font-bold">The Planets</span>
                     <nav className="md:hidden">

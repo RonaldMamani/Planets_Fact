@@ -6,7 +6,7 @@ type Props = {
 
 export default function NavBarPlanetsMobile({ onClick } : Props) {
     return (
-        <div className="flex flex-col px-5">
+        <div className="flex flex-col px-5 md:hidden">
             <LinkPlanet 
                 content="Mercury"
                 onClick={onClick}
