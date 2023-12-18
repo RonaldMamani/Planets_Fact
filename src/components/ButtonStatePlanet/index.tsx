@@ -10,11 +10,12 @@ export default function ButtonStatePlanet({ content,number,className,onClick } :
         <button 
             className={`${className} 
                 uppercase font-semibold py-5
-                md:border-gray-500 md:border md:p-3 md:text-start md:flex md:gap-5 md:w-[300px]
+                md:border-gray-500 md:border md:p-3 md:text-start md:flex md:gap-4 md:w-[300px]
+                md:
                 `}
             onClick={onClick}
             >
-                <span className="max-[767px]:hidden text-gray-500">{number}</span>
+                <span className={`max-[767px]:hidden text-gray-500 ${className}`}>{number}</span>
                 <span>{content}</span>
         </button>
     )

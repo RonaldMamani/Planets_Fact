@@ -58,11 +58,13 @@ export default function Mercury() {
             <section className="
                 grid grid-rows-3 gap-5 items-center
                 px-5 py-5
-                md:px-12 md:grid-rows-5 md:gap-8
+                md:px-10 md:py-8 md:grid-rows-5 md:gap-10
+                lg:px-40 lg:pt-20 lg:grid-cols-3 lg:grid-rows-4
                 ">
                 <div className="
                     flex justify-center relative z-0
                     md:row-span-3
+                    lg:col-span-2
                     ">
                     {overview &&
                         <img className="max-w-[185px] max-h-[185px]" src={Planet} alt="" />
@@ -80,6 +82,7 @@ export default function Mercury() {
                 <div className="
                     md:grid md:grid-cols-2 md:items-center
                     md:row-span-2
+                    lg:row-span-3 lg:flex lg:flex-col lg:items-start lg:gap-5
                     ">
                     <PlanetsDescrition 
                         name="Mecury"
@@ -123,7 +126,7 @@ export default function Mercury() {
                     </div>
                 </div>
                 <div className="
-                    
+                    lg:col-span-3
                     ">
                     <PlanetStatistics 
                         rotation="58.6 days"

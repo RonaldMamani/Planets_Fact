@@ -4,24 +4,39 @@ import Chevron from "../../assets/icon-chevron.svg"
 
 type Props = {
     content: string,
-    className: string,
+    className?: string,
     border?: boolean,
+    borderColor?: string,
     href: string,
-    onClick: () => void
+    onClick?: () => void
 }
 
-export default function LinkPlanet( { content,className,border,href,onClick } : Props ) {
+export default function LinkPlanet( { content,className,border,borderColor,href,onClick } : Props ) {
     return (
         <Link 
             to={href}
             onClick={onClick}
-            className={`flex justify-between items-center border-b-gray-500 py-5 ${border ? 'border-b' : ''}`}
+            className={`
+                flex justify-between items-center max-[767px]:border-b-gray-500 py-5 
+                md:py-8
+                lg:py-10
+                group
+                ${borderColor} 
+                ${border ? 'max-[767px]:border-b lg:hover:border-t-4' : ''} `}
         >
             <div className="flex gap-5">
-                <div className={`${className} rounded-full p-5`}></div>
-                <span className="text-white text-2xl font-semibold uppercase">{content}</span>
+                <div className={`${className} 
+                    rounded-full p-5
+                    md:hidden
+                    `}></div>
+                <span className="
+                    text-white text-2xl font-semibold uppercase
+                    md:text-white/75 md:text-lg
+                    lg:text-base
+                    lg:group-hover:text-white
+                    ">{content}</span>
             </div>
-            <img src={Chevron} alt="Icone de Chevron" />
+            <img className="md:hidden" src={Chevron} alt="Icone de Chevron" />
         </Link>
     )
 }
