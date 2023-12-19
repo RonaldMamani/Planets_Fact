@@ -89,16 +89,17 @@ export default function Venus() {
                         <>
                             <img 
                                 className="
-                                    w-[250px] h-[250px]
+                                    w-[155px] h-[155px]
+                                    md:w-[255px] md:h-[255px]
                                     lg:w-[400px] lg:h-[400px]
                                     " 
                                 src={Planet} 
                                 alt="" />
                             <img 
                                 className="
-                                    w-[120px] h-[140px] absolute top-24
-                                    md:top-36
-                                    lg:w-[155px] lg:h-[175px] lg:top-60
+                                    w-[80px] h-[100px] absolute top-24
+                                    md:w-[120px] md:h-[140px] md:top-44
+                                    lg:w-[150px] lg:h-[180px] lg:top-72
                                     " 
                                 src={GeologyPlanet} 
                                 alt="" />

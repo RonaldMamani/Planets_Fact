@@ -70,7 +70,8 @@ export default function Earth() {
                     {overview &&
                         <img 
                             className="
-                                w-[275px] h-[275px]
+                                w-[175px] h-[175px]
+                                md:w-[280px] md:h-[280px]
                                 lg:w-[450px] lg:h-[450px]
                             " 
                             src={Planet} 
@@ -79,7 +80,8 @@ export default function Earth() {
                     {structure &&
                         <img 
                             className="
-                                w-[275px] h-[275px]
+                                w-[175px] h-[175px]
+                                md:w-[280px] md:h-[280px]
                                 lg:w-[450px] lg:h-[450px]
                                 " 
                             src={InternPlanet} 
@@ -89,16 +91,17 @@ export default function Earth() {
                         <>
                             <img 
                                 className="
-                                    w-[275px] h-[275px]
+                                    w-[175px] h-[175px]
+                                    md:w-[280px] md:h-[280px]
                                     lg:w-[450px] lg:h-[450px]
                                     " 
                                 src={Planet} 
                                 alt="" />
                             <img 
                                 className="
-                                    w-[120px] h-[140px] absolute top-36
-                                    md:top-40
-                                    lg:w-[155px] lg:h-[175px] lg:top-80
+                                    w-[80px] h-[100px] absolute top-28
+                                    md:w-[120px] md:h-[140px] md:top-48
+                                    lg:w-[150px] lg:h-[180px] lg:top-80
                                     " 
                                 src={GeologyPlanet} 
                                 alt="" />
@@ -125,7 +128,7 @@ export default function Earth() {
                             lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser 
                             volcanic rock that is the primary constituent of the ocean floors.` : ''}
                             `}
-                        href="https://en.wikipedia.org/wiki/Venus"
+                        href="https://en.wikipedia.org/wiki/Earth"
                     />
                     <div className="
                         max-[767px]:hidden flex flex-col gap-5

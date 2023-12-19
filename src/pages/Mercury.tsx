@@ -89,15 +89,17 @@ export default function Mercury() {
                         <>
                             <img 
                                 className="
-                                    w-[185px] h-[185px]
+                                    w-[115px] h-[115px]
+                                    md:w-[185px] md:h-[185px]
                                     lg:w-[290px] lg:h-[290px]
                                     " 
                                 src={Planet} 
                                 alt="" />
                             <img 
                                 className="
-                                    w-[120px] h-[140px] absolute top-24
-                                    lg:w-[155px] lg:h-[175px] lg:top-52
+                                    w-[80px] h-[100px] absolute top-16
+                                    md:w-[120px] md:h-[140px] md:top-32
+                                    lg:w-[150px] lg:h-[180px] lg:top-52
                                     " 
                                 src={GeologyPlanet} 
                                 alt="" />
