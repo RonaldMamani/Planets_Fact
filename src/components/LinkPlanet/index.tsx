@@ -17,12 +17,14 @@ export default function LinkPlanet( { content,className,border,borderColor,href,
             to={href}
             onClick={onClick}
             className={`
-                flex justify-between items-center max-[767px]:border-b-gray-500 py-5 
-                md:py-8
+                flex justify-between items-center max-[767px]:border-b-gray-500 py-5 font-['Spartan']
+                md:py-8 md:px-3
                 lg:py-10
                 group
                 ${borderColor} 
-                ${border ? 'max-[767px]:border-b lg:hover:border-t-4' : ''} `}
+                ${border ? `
+                    max-[767px]:border-b
+                    lg:hover:border-t-4` : ''} `}
         >
             <div className="flex gap-5">
                 <div className={`${className} 
@@ -30,8 +32,8 @@ export default function LinkPlanet( { content,className,border,borderColor,href,
                     md:hidden
                     `}></div>
                 <span className="
-                    text-white text-2xl font-semibold uppercase
-                    md:text-white/75 md:text-lg
+                    max-md:text-white text-2xl font-semibold uppercase
+                    md:text-lg
                     lg:text-base
                     lg:group-hover:text-white
                     ">{content}</span>

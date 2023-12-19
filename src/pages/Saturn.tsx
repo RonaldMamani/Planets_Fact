@@ -72,7 +72,7 @@ export default function Saturn() {
                             className="
                                 w-[255px] h-[255px]
                                 md:w-[425px] md:h-[425px]
-                                lg:w-[660px] lg:h-[660px]
+                                lg:w-[650px] lg:h-[650px]
                             " 
                             src={Planet} 
                             alt="" />
@@ -82,7 +82,7 @@ export default function Saturn() {
                             className="
                                 w-[255px] h-[255px]
                                 md:w-[425px] md:h-[425px]
-                                lg:w-[660px] lg:h-[660px]
+                                lg:w-[650px] lg:h-[650px]
                                 " 
                             src={InternPlanet} 
                             alt="" />
@@ -93,7 +93,7 @@ export default function Saturn() {
                                 className="
                                     w-[255px] h-[255px]
                                     md:w-[425px] md:h-[425px]
-                                    lg:w-[660px] lg:h-[660px]
+                                    lg:w-[650px] lg:h-[650px]
                                     " 
                                 src={Planet} 
                                 alt="" />

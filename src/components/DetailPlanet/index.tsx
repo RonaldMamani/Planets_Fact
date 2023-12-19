@@ -11,12 +11,12 @@ export default function DetailPlanet({ titleDetail, detail } : Props) {
             lg:p-5 lg:gap-4
             ">
             <h6 className="
-                text-sm text-white/50 font-bold 
+                text-sm text-white/50 font-bold font-['Spartan'] tracking-[.75px]
                 md:text-xs
                 lg:text-sm
                 ">{titleDetail}</h6>
             <span className="
-                text-xl text-white font-medium
+                text-xl text-white font-medium font-['Anttonio'] tracking-[-1.1px]
                 md:text-2xl
                 lg:text-4xl
                 ">{detail}</span>

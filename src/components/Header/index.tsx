@@ -21,7 +21,22 @@ export default function Header() {
         ${pathname === '/saturn' && 'border-t-[#CD5120]'}
         ${pathname === '/uranus' && 'border-t-[#1EC1A2]'}
         ${pathname === '/neptune' && 'border-t-[#2D68F0]'}
-        `
+    `
+    const borderTopMercury = `${pathname === '/' ? 'md:border-b-4 md:border-b-[#419EBB] md:text-white lg:border-b-0 lg:border-t-4 lg:border-t-[#419EBB]' : 'md:text-white/75'}`
+
+    const borderTopVenus = `${pathname === '/venus' ? 'md:border-b-4 md:border-b-[#EDA249] md:text-white lg:border-b-0 lg:border-t-4 lg:border-t-[#EDA249]' : 'md:text-white/75'}`
+
+    const borderTopEartth = `${pathname === '/earth' ? 'md:border-b-4 md:border-b-[#6D2ED5] md:text-white lg:border-b-0 lg:border-t-4 lg:border-t-[#6D2ED5]' : 'md:text-white/75'}`
+
+    const borderTopMars = `${pathname === '/mars' ? 'md:border-b-4 md:border-b-[#D14C32] md:text-white lg:border-b-0 lg:border-t-4 lg:border-t-[#D14C32]' : 'md:text-white/75'}`
+
+    const borderTopMJupiter = `${pathname === '/jupiter' ? 'md:border-b-4 md:border-b-[#D83A34] md:text-white lg:border-b-0 lg:border-t-4 lg:border-t-[#D83A34]' : 'md:text-white/75'}`
+
+    const borderTopSaturn = `${pathname === '/saturn' ? 'md:border-b-4 md:border-b-[#CD5120] md:text-white lg:border-b-0 lg:border-t-4 lg:border-t-[#CD5120]' : 'md:text-white/75'}`
+
+    const borderTopUranus = `${pathname === '/uranus' ? 'md:border-b-4 md:border-b-[#1EC1A2] md:text-white lg:border-b-0 lg:border-t-4 lg:border-t-[#1EC1A2]' : 'md:text-white/75'}`
+
+    const borderTopNeptune = `${pathname === '/neptune' ? 'md:border-b-4 md:border-b-[#2D68F0] md:text-white lg:border-b-0 lg:border-t-4 lg:border-t-[#2D68F0]' : 'md:text-white/75'}`
 
     return (
         <header className="
@@ -35,7 +50,7 @@ export default function Header() {
                 lg:px-16 lg:flex-row lg:justify-between
                 ">
                     <Link to={'/'} className="
-                        uppercase text-3xl text-white font-bold pt-0
+                        uppercase tracking-[-1.05px] font-['Antonio'] text-3xl text-white font-bold pt-0
                         md:pt-10 lg:pt-0
                         ">The Planets
                     </Link>
@@ -50,16 +65,16 @@ export default function Header() {
                             }
                         </button>
                         <div className="hidden md:flex md:justify-between md:w-[calc(100vw-80px)]
-                            lg:w-full lg:gap-5
+                            lg:w-full lg:gap-3
                             ">
-                            <LinkPlanet content="Mercury" href="/" borderColor={`${border}`} border />
-                            <LinkPlanet content="Venus" href="/venus" borderColor={`${border}`} border />
-                            <LinkPlanet content="Earth" href="/earth" borderColor={`${border}`} border />
-                            <LinkPlanet content="Mars" href="/mars" borderColor={`${border}`} border />
-                            <LinkPlanet content="Jupiter" href="/jupiter" borderColor={`${border}`} border />
-                            <LinkPlanet content="Saturn" href="/saturn" borderColor={`${border}`} border />
-                            <LinkPlanet content="Uranus" href="/uranus" borderColor={`${border}`} border />
-                            <LinkPlanet content="Neptune" href="/neptune" borderColor={`${border}`} border />
+                            <LinkPlanet content="Mercury" href="/" borderColor={`${border} ${borderTopMercury}`} border />
+                            <LinkPlanet content="Venus" href="/venus" borderColor={`${border} ${borderTopVenus}`} border />
+                            <LinkPlanet content="Earth" href="/earth" borderColor={`${border} ${borderTopEartth}`} border />
+                            <LinkPlanet content="Mars" href="/mars" borderColor={`${border} ${borderTopMars}`} border />
+                            <LinkPlanet content="Jupiter" href="/jupiter" borderColor={`${border} ${borderTopMJupiter}`} border />
+                            <LinkPlanet content="Saturn" href="/saturn" borderColor={`${border} ${borderTopSaturn}`} border />
+                            <LinkPlanet content="Uranus" href="/uranus" borderColor={`${border} ${borderTopUranus}`} border />
+                            <LinkPlanet content="Neptune" href="/neptune" borderColor={`${border} ${borderTopNeptune}`} border />
                         </div>
                     </nav>
             </div>
