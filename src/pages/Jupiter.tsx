@@ -158,10 +158,10 @@ export default function Jupiter() {
                     lg:col-span-3
                     ">
                     <PlanetStatistics 
-                        rotation="1.03 days"
-                        revolution="1.88 years"
-                        radius="3,389.5 km"
-                        temp="−28°c"
+                        rotation="9.93 hours"
+                        revolution="11.86 years"
+                        radius="69,911 km"
+                        temp="-108°c"
                     />
                 </div>
             </section>
