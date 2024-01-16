@@ -64,7 +64,8 @@ export default function Header() {
                                 )
                             }
                         </button>
-                        <div className="hidden md:flex md:justify-between md:w-[calc(100vw-80px)]
+                        <div className="
+                            max-[767px]:hidden flex justify-between
                             lg:w-full lg:gap-3
                             ">
                             <LinkPlanet content="Mercury" href="/" borderColor={`${border} ${borderTopMercury}`} border />

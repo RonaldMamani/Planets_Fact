@@ -18,7 +18,7 @@ export default function LinkPlanet( { content,className,border,borderColor,href,
             onClick={onClick}
             className={`
                 flex justify-between items-center max-[767px]:border-b-gray-500 py-5 font-['Spartan']
-                md:py-8 md:px-3
+                md:py-8 md:px-[10px]
                 lg:py-10
                 group
                 ${borderColor} 
